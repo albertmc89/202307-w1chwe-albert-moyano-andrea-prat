@@ -1,0 +1,13 @@
+@use "colors";
+@use "fonts";
+
+.header {
+  &__title-introducction {
+    font-family: $Playfair;
+    color: $primary-color-titles;
+  }
+  &__subtitle-introducction {
+    font-family: $Rubik;
+    color: $secondary-color-text;
+  }
+}
