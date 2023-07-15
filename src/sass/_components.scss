@@ -11,3 +11,30 @@
     color: colors.$secondary-color-text;
   }
 }
+
+.section {
+  &__title {
+    font-family: fonts.$heading-font;
+    color: colors.$primary-color-titles;
+    font-size: 40px;
+
+    &::after {
+      position: absolute;
+      color: colors.$primary-color;
+      width: 227px;
+      height: 3px;
+    }
+  }
+  &__text {
+    font-family: fonts.$text-font;
+    color: colors.$secondary-color-text;
+    font-size: 18px;
+  }
+  &__articles {
+    font-family: fonts.$text-font;
+    font-family: fonts.$heading-font;
+  }
+  &__card {
+    border-radius: 16px;
+  }
+}
