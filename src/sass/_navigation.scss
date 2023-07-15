@@ -1,12 +1,69 @@
 @use "globals.scss";
+@use "fonts.scss";
 
 .header-container {
   background-color: black;
+  position: relative;
 
   &__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 1rem;
+  }
+}
+
+.navigation__responsive-list {
+  display: none;
+}
+
+.navigation__responsive-login {
+  display: none;
+}
+
+@media (min-width: 800px) and (max-width: 1440px) {
+  .header-container {
+    &__navigation {
+      font-family: fonts.$text-font;
+      padding: 2rem;
+    }
+  }
+  .header-container__responsive {
+    display: flex;
+    justify-content: center;
+
+    &__navigation__responsive {
+      padding: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .navigation__responsive-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0;
+    border-bottom: 2px solid transparent;
+    margin: 0;
+  }
+
+  .navigation__responsive-list:hover * {
+    border-bottom: 2px solid red;
+  }
+
+  .navigation__responsive-login {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+  }
+
+  a {
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+  }
+
+  svg {
+    display: none;
   }
 }
