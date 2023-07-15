@@ -1,5 +1,6 @@
 @use "globals.scss";
 @use "fonts.scss";
+@use "colors.scss";
 
 .header-container {
   background-color: black;
@@ -49,7 +50,7 @@
   }
 
   .navigation__responsive-list:hover * {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #ff7757;
   }
 
   .navigation__responsive-login {
