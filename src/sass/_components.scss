@@ -19,6 +19,7 @@
 
     &::after {
       position: absolute;
+      color: colors.$primary-color;
     }
   }
   &__text {
@@ -26,7 +27,10 @@
     color: colors.$secondary-color-text;
   }
   &__articles {
+    font-family: fonts.$text-font;
+    font-family: fonts.$heading-font;
   }
   &__card {
+    border-radius: 16px;
   }
 }
