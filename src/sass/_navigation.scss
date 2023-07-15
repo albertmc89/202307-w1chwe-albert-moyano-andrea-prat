@@ -1,0 +1,12 @@
+@use "globals.scss";
+
+.header-container {
+  background-color: black;
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+  }
+}
