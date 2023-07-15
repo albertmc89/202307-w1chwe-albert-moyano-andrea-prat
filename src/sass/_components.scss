@@ -11,3 +11,22 @@
     color: colors.$secondary-color-text;
   }
 }
+
+.section {
+  &__title {
+    font-family: fonts.$heading-font;
+    color: colors.$primary-color-titles;
+
+    &::after {
+      position: absolute;
+    }
+  }
+  &__text {
+    font-family: fonts.$text-font;
+    color: colors.$secondary-color-text;
+  }
+  &__articles {
+  }
+  &__card {
+  }
+}
