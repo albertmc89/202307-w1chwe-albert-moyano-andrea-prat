@@ -91,7 +91,12 @@ input {
   font-family: fonts.$heading-font;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 800px) and (max-width: 1440px) {
+  .hero-section {
+    background-size: cover;
+    background-position: 0%;
+  }
+
   .content-block {
     flex-direction: row;
     width: 80%;
