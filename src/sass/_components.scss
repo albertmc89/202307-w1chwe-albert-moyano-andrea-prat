@@ -96,6 +96,7 @@
   &__card {
     width: auto;
     height: 320px;
+    margin: 32px 0;
   }
 
   &.section-special-offer {
@@ -145,5 +146,19 @@
     color: rgb(255, 255, 255);
     width: 24px;
     height: 24px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1440px) {
+  .section {
+    &__card {
+      height: 661px;
+    }
+  }
+
+  .card-monument {
+    display: flex;
+    flex-direction: row;
+    position: relative;
   }
 }
