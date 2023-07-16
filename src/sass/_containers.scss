@@ -163,6 +163,10 @@ input {
   display: block;
 }
 
+.section-special-offer__responsive {
+  display: none;
+}
+
 @media (min-width: 800px) and (max-width: 1440px) {
   .hero-section {
     background-size: cover;
@@ -187,5 +191,14 @@ input {
       flex-direction: row;
       gap: 2.5rem;
     }
+  }
+
+  .section-special-offer__responsive {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-special-offer__image-container {
+    display: none;
   }
 }
