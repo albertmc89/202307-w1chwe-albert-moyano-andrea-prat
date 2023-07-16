@@ -23,20 +23,6 @@
   }
 }
 
-// .button {
-//   background-color: colors.$primary-color;
-//   padding: 2.5rem 1.25rem;
-//   display: flex;
-//   gap: 0.75;
-//   justify-content: space-between;
-//   align-items: center;
-// }
-
-// .button > * {
-//   font-size: 2.25rem;
-//   color: rgb(255, 255, 255);
-// }
-
 .section {
   margin: 0;
 
@@ -48,7 +34,8 @@
   &__title {
     font-family: fonts.$heading-font;
     color: colors.$primary-color-titles;
-    font-size: 40px;
+    font-size: 2.5rem;
+    font-weight: 400;
 
     &::after {
       content: "";
@@ -82,12 +69,21 @@
     width: auto;
     height: 320px;
   }
+
+  &.section-special-offer {
+    padding: 80px 16px 80px 16px;
+    &__heading {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
 }
 
 .card-monument {
   position: relative;
 
-  &__title-wrapper{
+  &__title-wrapper {
     position: absolute;
     bottom: 0;
     z-index: 10;
@@ -109,7 +105,6 @@
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
     margin-bottom: 1.063rem;
-
   }
 
   &__location {
@@ -118,10 +113,9 @@
     font-size: 1.125rem;
   }
 
-  &__location-logo{
+  &__location-logo {
     color: rgb(255, 255, 255);
     width: 24px;
     height: 24px;
   }
-
 }
