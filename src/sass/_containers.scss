@@ -91,6 +91,61 @@ input {
   font-family: fonts.$heading-font;
 }
 
+.section-special-offer {
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+  }
+}
+
+.text-block {
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: fonts.$text-font;
+    color: colors.$secondary-color-text;
+    font-size: 1.75rem;
+    font-weight: 400;
+  }
+
+  &__description {
+    font-family: fonts.$heading-font;
+    color: colors.$primary-color-titles;
+    margin: 0;
+  }
+
+  &__price {
+    font-family: fonts.$text-font;
+    color: colors.$secondary-color-text;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.price {
+  &__details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.details {
+  &__cost {
+    color: colors.$primary-color;
+    font-size: 2rem;
+  }
+}
+
+.title__stars {
+  display: block;
+}
+
 @media (min-width: 800px) and (max-width: 1440px) {
   .hero-section {
     background-size: cover;
