@@ -19,6 +19,7 @@
 
   &.section--popular-destination {
     padding: 5rem 1rem 6.25rem 1rem;
+    align-content: center;
   }
 
   &__title {
@@ -43,9 +44,16 @@
     font-family: fonts.$text-font;
     font-family: fonts.$heading-font;
     padding: 6.25rem 0 6.25rem 0;
+    display: flex;
+    justify-content: center;
   }
+
+  &__item {
+    width: 100%;
+  }
+
   &__card {
-    width: 288px;
+    width: auto;
     height: 320px;
 
     &-monument {
