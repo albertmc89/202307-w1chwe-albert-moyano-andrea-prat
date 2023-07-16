@@ -92,11 +92,18 @@ input {
 }
 
 .section-special-offer {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
   &__text-block {
     display: flex;
     flex-direction: column;
     gap: 24px;
     padding: 20px;
+    background-color: colors.$primary-color-special-offer-cards;
+    border-radius: 0 0 26px 26px;
+    margin-top: -64px;
   }
 }
 
