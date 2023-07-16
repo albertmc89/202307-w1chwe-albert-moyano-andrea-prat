@@ -20,8 +20,36 @@
     &--signup {
       background-color: colors.$primary-color;
     }
+   
   }
 }
+
+.icon-button-wrapper{
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.icon-button{
+  border-radius: 12px;
+  display: flex;
+  padding: 28px 20px;
+  align-items: center;
+  justify-content: center;
+  width: 4.125rem;
+  height: 3.75rem;
+
+  &--next {
+    background-color:colors.$primary-color;
+    
+
+  }
+  &--previous{
+    background-color:colors.$primary-color-titles;
+  }
+} 
 
 // .button {
 //   background-color: colors.$primary-color;
@@ -123,5 +151,4 @@
     width: 24px;
     height: 24px;
   }
-
 }
