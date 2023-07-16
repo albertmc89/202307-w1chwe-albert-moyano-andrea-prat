@@ -3,6 +3,7 @@
 @use "globals";
 
 .header {
+  margin: 0;
   &__title-introduction {
     font-family: fonts.$heading-font;
     color: colors.$primary-color-titles;
@@ -14,6 +15,7 @@
 }
 
 .section {
+  margin: 0;
   &__title {
     font-family: fonts.$heading-font;
     color: colors.$primary-color-titles;
@@ -32,10 +34,21 @@
     font-size: 18px;
   }
   &__articles {
+    margin: 0;
     font-family: fonts.$text-font;
     font-family: fonts.$heading-font;
   }
   &__card {
-    border-radius: 16px;
+    width: 288px;
+    height: 320px;
+    &-monument {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }
