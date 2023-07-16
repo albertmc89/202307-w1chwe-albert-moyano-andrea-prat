@@ -20,11 +20,10 @@
     &--signup {
       background-color: colors.$primary-color;
     }
-   
   }
 }
 
-.icon-button-wrapper{
+.icon-button-wrapper {
   padding: 5rem 0;
   display: flex;
   justify-content: center;
@@ -32,7 +31,7 @@
   gap: 40px;
 }
 
-.icon-button{
+.icon-button {
   border-radius: 12px;
   display: flex;
   padding: 28px 20px;
@@ -42,14 +41,12 @@
   height: 3.75rem;
 
   &--next {
-    background-color:colors.$primary-color;
-    
-
+    background-color: colors.$primary-color;
   }
-  &--previous{
-    background-color:colors.$primary-color-titles;
+  &--previous {
+    background-color: colors.$primary-color-titles;
   }
-} 
+}
 
 .section {
   margin: 0;
