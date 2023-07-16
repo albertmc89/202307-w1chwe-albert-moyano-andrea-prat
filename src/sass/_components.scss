@@ -28,10 +28,13 @@
     font-size: 40px;
 
     &::after {
-      position: absolute;
-      color: colors.$primary-color;
-      width: 227px;
+      content: "";
+      background-color: colors.$primary-color;
+      width: 100%;
+      max-width: 227px;
       height: 3px;
+      display: block;
+      margin-top: 1.25rem;
     }
   }
   &__text {
