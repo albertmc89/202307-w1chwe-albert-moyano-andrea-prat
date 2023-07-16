@@ -55,6 +55,14 @@
 }
 
 .buy-now {
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+}
+
+.buy-now {
   &__col01 {
     display: flex;
     flex-direction: column;
@@ -81,4 +89,14 @@ input {
   padding: 0.62rem 0 0.62rem 0;
   text-align: start;
   font-family: fonts.$heading-font;
+}
+
+@media (min-width: 800px) {
+  .content-block {
+    flex-direction: row;
+  }
+  .content-block__buy-now {
+    flex-direction: row;
+    border: 1px solid red;
+  }
 }
