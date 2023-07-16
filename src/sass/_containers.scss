@@ -39,8 +39,8 @@
   flex-direction: column;
   gap: 3.75rem;
   background-color: rgb(255, 255, 255);
-  border-radius: 2rem;
-  padding: 1.25rem;
+  border-radius: 1rem;
+  overflow: hidden;
 
   &__buy-now {
     display: flex;
@@ -54,17 +54,25 @@
   }
 }
 
-.buy-now {
+.column {
+  &__frame01 {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1.25rem;
+  }
+}
+
+.frame01 {
   &__col01 {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    border-style: none;
-    padding: 0;
-    margin: 0;
   }
+}
 
-  &__col02 {
+.buy-now {
+  &__column {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -81,4 +89,26 @@ input {
   padding: 0.62rem 0 0.62rem 0;
   text-align: start;
   font-family: fonts.$heading-font;
+}
+
+@media (min-width: 800px) {
+  .content-block {
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .column {
+    &__frame01 {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .buy-now {
+    &__column {
+      display: flex;
+      flex-direction: row;
+      gap: 2.5rem;
+    }
+  }
 }
