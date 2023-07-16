@@ -167,6 +167,49 @@ input {
   display: none;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+
+  &__text-block {
+    font-family: fonts.$heading-font;
+    color: colors.$primary-color-titles;
+    font-size: 1.9rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__readmore {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+  }
+}
+.text-block {
+  &__text-blog {
+    font-family: fonts.$text-font;
+    color: colors.$primary-color-titles;
+    line-height: 42px;
+    font-size: 1.125rem;
+  }
+}
+
+.readmore {
+  display: flex;
+  align-items: center;
+  &__anchor {
+    font-family: fonts.$text-font;
+    color: colors.$primary-color;
+    line-height: 52px;
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 800px) and (max-width: 1440px) {
   .hero-section {
     background-size: cover;

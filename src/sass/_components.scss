@@ -122,6 +122,14 @@
       gap: 32px;
     }
   }
+
+  &.section-blog {
+    padding: 80px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+  }
 }
 
 .card-monument {
