@@ -4,14 +4,6 @@
 
 .header {
   margin: 0;
-  &__title-introduction {
-    font-family: fonts.$heading-font;
-    color: colors.$primary-color-titles;
-  }
-  &__subtitle-introduction {
-    font-family: fonts.$text-font;
-    color: colors.$secondary-color-text;
-  }
 }
 
 .button {
@@ -121,6 +113,14 @@
       flex-direction: column;
       gap: 32px;
     }
+  }
+
+  &.section-blog {
+    padding: 80px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
   }
 }
 
